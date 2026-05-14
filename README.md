@@ -18,6 +18,7 @@ Ambos ejemplos están escritos en Python 3 y no requieren librerías externas.
 - **Inyección de Dependencia**: Las clases dependen de abstracciones (interfaz `Notificador`) en lugar de implementaciones concretas. Se muestra inyección por constructor y por setter, facilitando el cambio de dependencias y la realización de pruebas unitarias con mocks.
   
 Salida esperada (ejemplo):
+
 [EventBus] EmailSubscriber suscrito a 'noticias'
 [EventBus] SMSSubscriber suscrito a 'noticias'
 [EventBus] EmailSubscriber suscrito a 'clima'
@@ -37,6 +38,7 @@ Salida esperada (ejemplo):
 ## Instrucciones para clonar y ejecutar
 
 Salida esperada
+
 === Inyección por constructor ===
 [Email] Enviando a maria@example.com: Bienvenido maria@example.com, tu cuenta ha sido activada.
 [SMS] Enviando a +573001234567: Bienvenido +573001234567, tu cuenta ha sido activada.
