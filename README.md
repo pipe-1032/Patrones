@@ -17,7 +17,7 @@ Ambos ejemplos están escritos en Python 3 y no requieren librerías externas.
 - **Publish‑Subscribe**: Desacopla emisores (publishers) de receptores (subscribers) mediante un mediador (EventBus). Los suscriptores pueden agregarse o eliminarse en tiempo de ejecución.
 - **Inyección de Dependencia**: Las clases dependen de abstracciones (interfaz `Notificador`) en lugar de implementaciones concretas. Se muestra inyección por constructor y por setter, facilitando el cambio de dependencias y la realización de pruebas unitarias con mocks.
   
-Salida esperada (ejemplo):
+##Salida esperada (ejemplo):
 
 [EventBus] EmailSubscriber suscrito a 'noticias'
 [EventBus] SMSSubscriber suscrito a 'noticias'
@@ -35,9 +35,8 @@ Salida esperada (ejemplo):
 
 --- Publicando otra noticia ---
 [EmailSubscriber-principal] Recibido: Bolsa de valores cierra al alza. (enviando email...)x
-## Instrucciones para clonar y ejecutar
 
-Salida esperada
+##Salida esperada
 
 === Inyección por constructor ===
 [Email] Enviando a maria@example.com: Bienvenido maria@example.com, tu cuenta ha sido activada.
@@ -49,7 +48,9 @@ No hay notificador configurado.
 
 === Prueba con Mock ===
 Mensajes almacenados por el mock: [('test@test.com', 'Bienvenido test@test.com, tu cuenta ha sido activada.'), ('otro@test.com', 'Bienvenido otro@test.com, tu cuenta ha sido activada.')]
-Prueba pasada: el mock registró correctamente los mensajes.
+Prueba pasada: el mock registró correctamente los mensajes
+
+## Instrucciones para clonar y ejecutar
 
 ### Requisitos previos
 - Tener instalado [Python 3.8+](https://www.python.org/downloads/)
